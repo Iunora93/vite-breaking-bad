@@ -1,13 +1,13 @@
 <script>
 export default {
-  name: "HelloWord",
+  name: "AppHeader",
 };
 </script>
 
 <template>
-  <div>
-    <h1>Hello World</h1>
-  </div>
+  <header>
+    <h1>header</h1>
+  </header>
 </template>
 
 <style lang="scss" scoped>
