@@ -14,7 +14,7 @@ export default {
   },
   created() {
     axios.get("https://www.breakingbadapi.com/api/characters").then((resp) => {
-      this.characters = resp.data.results;
+      this.characters = resp.data;
     });
   },
 };
@@ -26,11 +26,14 @@ export default {
         <div class="container-sm">
             <h6 class="py-3 px-3">Found 62 characters</h6>           
         </div>
-        <div class="container-sm">
-            <AppCard 
-            v-for="character in characters"
-            :info="character"
-            />
+        <div class="container-sm d-flex">
+            
+                <AppCard 
+                v-for="character in characters"
+                class="col-lg-2"           
+                :info="character"
+                />
+            
         </div>
      </div> 
       
@@ -42,7 +45,7 @@ export default {
 .container-lg{
     background-color: var(--secondary-color);
     .container-sm{
-        
+        flex-wrap: wrap;
         h6{
             color: white;
             background-color: #212529;
