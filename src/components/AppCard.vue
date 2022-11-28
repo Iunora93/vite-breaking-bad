@@ -9,9 +9,9 @@ export default {
 
 <template> 
 <main class="d-flex">
-    <div class="text-center px-2 py-2 mx-3 mb-2">
-        <img class="img-fluid" :src="info.img" alt="" />
-        <h5 class="mb-3">{{info.name}}</h5>
+    <div class="text-center px-3 py-3 mx-3 mb-2">
+        <img class="img-fluid mb-2" :src="info.img" alt="" />
+        <h5 class="mb-2">{{info.name}}</h5>
         <div class="status">{{info.status}}</div>
     </div>
 </main>
@@ -20,10 +20,10 @@ export default {
 <style lang="scss" scoped>
     .text-center{
         background-color: var(--primary-color);
-        width: 200px;
+        
 
         img{
-            width: 100px;
+            width: 350px;
         }
         h5{
             color: white;
