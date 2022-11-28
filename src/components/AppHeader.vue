@@ -5,15 +5,18 @@ export default {
 </script>
 
 <template>
-  <header>
-    <h1>header</h1>
+  <header class="d-flex p-3">
+    <img  src="../assets/logo (2).png" alt="logo">
+    <h1 class="px-3">Breaking Bad Api</h1>
   </header>
 </template>
 
 <style lang="scss" scoped>
-h1 {
-  @include media-breakpoint-up(md) {
-    color: green;
-  }
+img{
+  max-width: 100px;
+  height: auto; 
+}
+h1{
+  color: white;
 }
 </style>
