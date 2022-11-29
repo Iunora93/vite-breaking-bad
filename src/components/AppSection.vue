@@ -12,6 +12,11 @@ export default {
       store,
     };
   },
+  computed: {
+    totalCharaters() {
+      return this.store.characters.length;
+    },
+  },
 };
 </script>
 
@@ -19,7 +24,7 @@ export default {
     <main>
      <div class="container-lg py-4 px-5">
         <div class="container-sm">
-            <h6 class="py-3 px-3">Found 62 characters</h6>           
+            <h6 class="py-3 px-3">Found {{totalCharaters}} characters</h6>           
         </div>
         <div class="container-sm d-flex justify-content-center">
             

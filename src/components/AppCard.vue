@@ -21,9 +21,10 @@ export default {
 <style lang="scss" scoped>
     .text-center{
         background-color: var(--primary-color);
-        
+
         h5{
             color: white;
+            font-size: 15px;
         }
         .status, .category{
             color: gray;
