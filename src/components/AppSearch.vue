@@ -1,7 +1,12 @@
 <script>
+import { store } from "../store.js";
 export default {
   name: "AppSearch",
-  
+  data(){
+    return{
+    store,
+    };
+  },
 };
 </script>
 
@@ -9,11 +14,11 @@ export default {
     <main>
      <div class="container">
         <div class="col-auto mt-3 mb-3">
-            <select class="form-select w-auto">           
-                <option selected>Select category</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+            <select class="form-select w-auto" v-model="store.statusCategory" @change="$emit('search')">           
+                <option selected value="">Select category</option>
+                <option value="Breaking Bad">Breaking Bad</option>
+                <option value="Better Call Saul">Better Call Saul</option>
+                <option value="Breaking Bad, Better Call Saul">Breaking Bad & Better Call Saul</option>
             </select>
         </div>
      </div> 

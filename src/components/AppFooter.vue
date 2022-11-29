@@ -6,7 +6,7 @@ export default {
 
 <template>
     <footer>
-        <h1>footer</h1>
+        <h1 class="py-5"></h1>
     </footer>
 </template>
 
