@@ -51,8 +51,17 @@ export default {
             background-color: #212529;
         }
         .my-col{
-          width: calc(20% - 32px) ;
+          width: calc(100% - 32px);
+          @include media-breakpoint-up(sm) {
+            width: calc(50% - 32px);
+          }
+          @include media-breakpoint-up(md) {
+            width: calc((100% / 3) - 32px);
+          }
+          @include media-breakpoint-up(lg) {
+            width: calc(20% - 32px);
+          }
+              }
         }
-    }
 }
 </style>
